@@ -215,3 +215,26 @@ body {
     scale: 1.1;
     cursor: pointer;
 }
+
+
+
+#about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 10vw;
+    background-color: red;
+}
+
+#about-part1{
+    height: 20vh;
+    width: 100%;
+    background-color: green;
+}
+
+#about-part2{
+    height: 80vh;
+    width: 100%;
+    background-color: blue;
+}
