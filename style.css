@@ -122,7 +122,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+    position: absolute;
     opacity: 0.9;
 }
 
@@ -238,8 +238,10 @@ body {
     width: 100%;
     display: flex;
     position: relative;
-    /* background-color: blue; */
-    
+    /* background-color: blue; */ 
+}
+#about #about-content:hover #about-image {
+    opacity: 0.85;
 }
 #about #about-image{
     height: 100%;
@@ -250,6 +252,7 @@ body {
     left: 0;
     z-index: 1;
     opacity: 0.9;
+    transition: all 0.3s ease;
 }
 
 #about #about-overlay {
@@ -318,4 +321,13 @@ body {
     line-height: 2rem;
     font-style: italic;
     color: white;
+}
+
+
+
+
+#footer {
+    height: 50vh;
+    width: 100%;
+    background-color: green;
 }
