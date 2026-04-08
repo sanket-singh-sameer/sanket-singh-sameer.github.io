@@ -37,6 +37,9 @@ animateCursor();
 
 
 
+
+
+
 const aboutContent = document.getElementById('about-content');
 const aboutImage = document.getElementById('about-image');
 
@@ -54,3 +57,33 @@ if (aboutContent && aboutImage) {
     });
 }
 
+
+
+
+
+
+
+const loader = document.getElementById('loader');
+window.addEventListener('load', () => {
+    const loaderText = document.querySelector('#loader-part2 h2');
+    const loadingStates = ['Loading.', 'Loading..', 'Loading...'];
+    let loadingStateIndex = 0;
+
+    const loaderInterval = setInterval(() => {
+        if (!loaderText) {
+            return;
+        }
+
+        loaderText.textContent = loadingStates[loadingStateIndex];
+        loadingStateIndex = (loadingStateIndex + 1) % loadingStates.length;
+    }, 500);
+
+    setTimeout(() => {
+        clearInterval(loaderInterval);
+        // loader.style.opacity = '0';
+        loader.style.display = 'none';
+        loader.style.pointerEvents = 'none';
+        loader.innerHTML = '';
+    }, 3000);
+
+});
