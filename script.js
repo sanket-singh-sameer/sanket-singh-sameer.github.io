@@ -38,16 +38,19 @@ animateCursor();
 
 
 const aboutContent = document.getElementById('about-content');
+const aboutImage = document.getElementById('about-image');
 
-if (aboutContent) {
-    console.log(aboutContent.childNodes[1].src);
+if (aboutContent && aboutImage) {
+
+    const hoverImageSrc = new URL('./assets/images/img2.jpg', document.baseURI).href;
+    const defaultImageSrc = new URL('./assets/images/img4.jpg', document.baseURI).href;
 
     aboutContent.addEventListener('mouseenter', () => {
-        aboutContent.childNodes[1].src = 'assets/images/img2.jpg';
+        aboutImage.src = hoverImageSrc;
     });
 
     aboutContent.addEventListener('mouseleave', () => {
-        aboutContent.childNodes[1].src = 'assets/images/img4.jpg';
+        aboutImage.src = defaultImageSrc;
     });
 }
 
