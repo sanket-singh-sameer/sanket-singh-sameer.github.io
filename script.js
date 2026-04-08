@@ -32,3 +32,22 @@ function animateCursor() {
 }
 
 animateCursor();
+
+
+
+
+
+const aboutContent = document.getElementById('about-content');
+
+if (aboutContent) {
+    console.log(aboutContent.childNodes[1].src);
+
+    aboutContent.addEventListener('mouseenter', () => {
+        aboutContent.childNodes[1].src = 'assets/images/img2.jpg';
+    });
+
+    aboutContent.addEventListener('mouseleave', () => {
+        aboutContent.childNodes[1].src = 'assets/images/img4.jpg';
+    });
+}
+
