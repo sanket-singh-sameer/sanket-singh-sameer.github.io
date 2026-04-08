@@ -47,7 +47,6 @@ if (aboutContent && aboutImage) {
 
     const hoverImageSrc = new URL('./assets/images/compressed/img2.jpg', document.baseURI).href;
     const defaultImageSrc = new URL('./assets/images/compressed/img4.jpg', document.baseURI).href;
-
     aboutContent.addEventListener('mouseenter', () => {
         aboutImage.src = hoverImageSrc;
     });
@@ -85,7 +84,12 @@ window.addEventListener('load', () => {
 
 
 gsap.to("#loader", {
-    opacity: 0,
+    autoAlpha: 0,
     duration: 0.5,
     delay: 2.75,
+    onComplete: () => {
+        if (loader) {
+            loader.style.display = 'none';
+        }
+    },
 });
