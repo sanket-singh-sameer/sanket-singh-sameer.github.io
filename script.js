@@ -78,12 +78,14 @@ window.addEventListener('load', () => {
         loadingStateIndex = (loadingStateIndex + 1) % loadingStates.length;
     }, 500);
 
-    setTimeout(() => {
-        clearInterval(loaderInterval);
-        // loader.style.opacity = '0';
-        loader.style.display = 'none';
-        loader.style.pointerEvents = 'none';
-        loader.innerHTML = '';
-    }, 2500);
+});
 
+
+
+
+
+gsap.to("#loader", {
+    opacity: 0,
+    duration: 0.5,
+    delay: 2.75,
 });
