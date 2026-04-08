@@ -42,8 +42,8 @@ const aboutImage = document.getElementById('about-image');
 
 if (aboutContent && aboutImage) {
 
-    const hoverImageSrc = new URL('./assets/images/img2.jpg', document.baseURI).href;
-    const defaultImageSrc = new URL('./assets/images/img4.jpg', document.baseURI).href;
+    const hoverImageSrc = new URL('./assets/images/compressed/img2.jpg', document.baseURI).href;
+    const defaultImageSrc = new URL('./assets/images/compressed/img4.jpg', document.baseURI).href;
 
     aboutImage.src = hoverImageSrc;
 
