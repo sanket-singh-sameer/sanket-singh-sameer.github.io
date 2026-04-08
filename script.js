@@ -45,8 +45,6 @@ if (aboutContent && aboutImage) {
     const hoverImageSrc = new URL('./assets/images/compressed/img2.jpg', document.baseURI).href;
     const defaultImageSrc = new URL('./assets/images/compressed/img4.jpg', document.baseURI).href;
 
-    aboutImage.src = hoverImageSrc;
-
     aboutContent.addEventListener('mouseenter', () => {
         aboutImage.src = hoverImageSrc;
     });
