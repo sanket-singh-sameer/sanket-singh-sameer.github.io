@@ -84,6 +84,6 @@ window.addEventListener('load', () => {
         loader.style.display = 'none';
         loader.style.pointerEvents = 'none';
         loader.innerHTML = '';
-    }, 3000);
+    }, 2500);
 
 });
