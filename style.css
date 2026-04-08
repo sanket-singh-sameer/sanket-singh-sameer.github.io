@@ -328,9 +328,16 @@ body {
 
 
 #footer {
-    height: 50vh;
-    width: 100%;
-    background-color: green;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    /* background-color: green; */
+    font-size: 0.6vw;
+    font-style: italic;
+    border-top: solid 2px rgb(25, 25, 25);
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
 #cursor {
