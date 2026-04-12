@@ -65,6 +65,7 @@ body {
     padding-left: 4vw;
 }
 
+
 #nav #nav-part1:hover {
     scale: 1.05;
     cursor: pointer;
@@ -87,6 +88,10 @@ body {
     justify-content: center;
     text-align: center;
     border-right: solid 2px rgb(25, 25, 25);
+}
+
+#nav #nav-part2 i {
+    display: none;
 }
 
 #nav #nav-part2 h2:nth-last-child(1) {
@@ -135,7 +140,7 @@ body {
     font-family: "Monument Extended";
     font-size: 6vw;
     position: absolute;
-    font-style: underline;
+    /* font-style: underline; */
     /* mix-blend-mode: difference; */
     /* background-color: red; */
 }
@@ -347,14 +352,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 #cursor {
     height: 30px;
     width: 30px;
@@ -398,4 +395,43 @@ body {
     font-family: "Monument Extended";
     font-size: 6vw;
     color: black;
+}
+
+
+
+
+@media (max-width: 680px) {
+    #nav {
+        margin: 1.5vh 2.5vw;
+        height: 7.5vh;
+    }
+    #nav #nav-part1 h1 {
+        font-size: 5vw;
+    }
+    #nav #nav-part2 {
+        width: auto;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 4vw;
+    }
+    #nav #nav-part2 h2 {
+        display: none;
+    }
+    #nav #nav-part2 i {
+        display: block;
+        line-height: 1;
+        font-size: 1.5rem;
+    }
+    #hero {
+        padding: 1.5vh 2.5vw;
+    }
+    #hero #hero-content h1 {
+        width: 100%;
+        /* height: auto; */
+        font-size: 10vw;
+        text-align: center;
+        top: 10%;
+    }
+    
 }

@@ -86,7 +86,8 @@ window.addEventListener('load', () => {
 gsap.to("#loader", {
     autoAlpha: 0,
     duration: 0.5,
-    delay: 2.75,
+    // delay: 2.75,
+    delay: 0,
     onComplete: () => {
         if (loader) {
             loader.style.display = 'none';
